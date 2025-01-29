@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bcse
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bcse
+  template:
+    metadata:
+      labels:
+        app: bcse
+    spec:
+      containers:
+      - name: bcse-container
+        image: bcse:v1
+        ports:
+        - containerPort: 80
