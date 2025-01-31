@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: bcse-container
-        image: bcse:v1
+        image: cloudsihmar/bcse:v1
         ports:
         - containerPort: 80
